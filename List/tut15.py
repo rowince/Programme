@@ -18,7 +18,7 @@ list2 = [20, 10, 20, 4, 100]
 # for loop
 
 mx = list2[0]
-for i in range(len(list2)):
+for i in range(1, len(list2)):
     if list2[i] > mx:
         mx = list2[i]
 print(mx)

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #divdrop {
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+        }
+
+        #divfile {
+            display: none;
+        }
+
+        #divpreview img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Image Preview Tool</h1>
+        <p>Image Link:
+            <br>
+            <input type="text" id='divimage' name="divimage">
+            <br>
+            <button type="button" onclick="loadImage()">Confirm</button>
+        </p>
+    </div>
+    <div id="divdrop">
+        <form class="upload">
+            <input id='divfile' type="file" name="name" onchange="handleFiles(this.files)">
+            <div id="divpreview">
+                <p>Drag and Drop:</p>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    function onEventList(e) {
+        e.stopPropagation();
+        e.preventDefault();
+    }
+    function drop(e) {
+        var dt = e.dataTransfer;
+        var files = dt.files;
+        [...files].forEach(previewFile);
+    }
+    let divdrop = document.getElementById("divdrop");
+    ["dragenter", "dragover", "dragleave", "drop"].forEach(eventName => {
+        divdrop.addEventListener(eventName, onEventList, false);
+        document.body.addEventListener(eventName, onEventList, false);
+    });
+    divdrop.addEventListener("drop", drop, false);
+    function loadImage() {
+        const url = document.getElementById("divimage").value;
+        addImage(url);
+    }
+    function addImage(src) {
+        let img = document.createElement("img");
+        img.src = src;
+        const previewElem = document.getElementById("divpreview");
+        previewElem.removeChild(previewElem.children[0]);
+        previewElem.appendChild(img);
+    }
+    function previewFile(file) {
+        let reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onloadend = () => {
+            let img = document.createElement("img");
+            img.src = reader.result;
+            const previewElem = document.getElementById("divpreview");
+            previewElem.removeChild(previewElem.children[0]);
+            previewElem.appendChild(img);
+        };
+    }
+
+</script>
+
+</html>

@@ -18,7 +18,7 @@ for i in range(2, len(list2)):
         secmx = mx
         mx = list2[i]
     elif list2[i]>secmx and mx != list2[i]:
-        mn = list2[i]
+        secmx = list2[i]
     elif mx == secmx and secmx != list2[i]:
         secmx = list2[i]
 print(secmx)

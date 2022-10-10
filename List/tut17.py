@@ -16,4 +16,3 @@ for i in range(2, len(list2)):
         mn = list2[i]
 
 print(secmn)
-

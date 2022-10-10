@@ -1,6 +1,3 @@
-import time
-from tkinter import Y
-
 # Maximum of two numbers in Python
 
 # Input: a = 2, b = 4
@@ -9,7 +6,7 @@ from tkinter import Y
 a = 2
 b = 4
 
-#built-in method
+# built-in method
 # start = time.time()
 # maximum = max(a, b)
 # end = time.time()
@@ -32,6 +29,3 @@ b = 4
 
 maximum = a if a > b else b
 print("Maximum:", maximum)
-
-
-
