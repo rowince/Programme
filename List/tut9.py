@@ -4,7 +4,6 @@
 # Output : [9, 8, 7, 6, 5, 4]
 
 x = [4, 5, 6, 7, 8, 9, 1]
-
 # for loop
 # reverse = []
 # for i in x:
@@ -16,7 +15,7 @@ x = [4, 5, 6, 7, 8, 9, 1]
 # x.reverse()
 # print(x)
 
-#slice method
+# slice method
 
 # reverse = x[::-1]
 # print(reverse)
