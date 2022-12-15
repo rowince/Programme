@@ -3,10 +3,6 @@
 # Input : list2 = [20, 10, 20, 4, 100]
 # Output : 100
 
-from pickletools import read_uint1
-import re
-
-
 list2 = [20, 10, 20, 4, 100]
 
 # max function
