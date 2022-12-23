@@ -31,8 +31,8 @@ def palindrome(str):
         return False
 
 
-res = palindrome(x)
-if res:
-    print('Palindrome')
-else:
-    print('Not Palindrome')
+# res = palindrome(x)
+# if res:
+#     print('Palindrome')
+# else:
+#     print('Not Palindrome')

@@ -19,25 +19,32 @@ from collections import Counter
 
 # l1 = [1, 2, 1, 2, 3, 4, 5, 1, 1, 2, 5, 6, 7, 8, 9, 9]
 # d = Counter(l1)
-# print(d[2])
+# print(d)
+# print(d.keys())
+# print(d.values())
+# print(d.items())
 
 # new_list = list([item for item in d if d[item] > 1])
 # print(new_list)
-x = 'aabbbccad'
-y = []
-y.extend(x)
-print(y)
-y1 = Counter(y)
-print(dict(y1))
+# x = 'aabbbccade'
+# y = []
+# y.extend(x)
+# print(y)
+# y1 = Counter(y)
+# print(y1)
 # new_list = list([item for item in y1 if y1[item] == 1])
 # print(new_list)
 
-# x = 'aabbbcc'
-# # out= a2b3c2
-# y = {}
-# for i in x:
-#     if i not in y:
-#         y[i] = 1
-#     else:
-#         y[i] = y[i] + 1
+x = 'aabbbcc'
+# out= a2b3c2
+y = {}
+for i in x:
+    if i not in y:
+        y[i] = 1
+    else:
+        y[i] = y[i] + 1
+out = ''
+# for k, v in y.items():
+#     out = out + k + str(v)
+# print(out)
 # print(y)

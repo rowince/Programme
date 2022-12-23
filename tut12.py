@@ -15,5 +15,5 @@ x = [12, 67, 98, 34]
 
 # using map function
 
-count = list(map(lambda sub: sum(int(i) for i in str(sub)), x))
-print(count)
+# count = list(map(lambda sub: sum(int(i) for i in str(sub)), x))
+# print(count)
