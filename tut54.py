@@ -8,15 +8,18 @@ input_data = '2name 1my 4rowince 3is'
 # for function
 
 
-# def name(name_str):
-#     x = name_str.split()
-#     x.sort()
-#     temp = []
-#     for i in x:
-#         new = ''.join([j for j in i if j.isalpha()])
-#         temp.append(new)
-#     new = ' '.join(temp)
-#     print(new)
+def name(name_str):
+    x = name_str.split()
+    x.sort()
+    temp = []
+    for i in x:
+        new = ''.join([j for j in i if j.isalpha()])
+        temp.append(new)
+    new = ' '.join(temp)
+    print(new)
+
+
+name(input_data)
 
 # def name(name_str):
 #     x = name_str.split()
