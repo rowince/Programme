@@ -35,16 +35,29 @@ from collections import Counter
 # new_list = list([item for item in y1 if y1[item] == 1])
 # print(new_list)
 
-x = 'aabbbcc'
+# x = 'aabbbcc'
 # out= a2b3c2
-y = {}
-for i in x:
-    if i not in y:
-        y[i] = 1
-    else:
-        y[i] = y[i] + 1
-out = ''
+# y = {}
+# for i in x:
+#     if i not in y:
+#         y[i] = 1
+#     else:
+#         y[i] = y[i] + 1
+# out = ''
 # for k, v in y.items():
 #     out = out + k + str(v)
 # print(out)
 # print(y)
+
+#----------------------------------------------------------------------------------------------------#
+
+#input = x = {'a':2, 'b':4, 'c':5}
+#output = 'a2b4c5'
+
+x = {'a': 2, 'b': 4, 'c': 5}
+print(x)
+y = ''
+for k, v in x.items():
+    y = y+k
+    y = y+str(v)
+print(y)

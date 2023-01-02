@@ -5,10 +5,10 @@
 # # x = sorted(x)
 # print(x)
 
-y = ['30', '22', '11', '2', '1', '9']
-y.sort(key=int)
+# y = ['30', '22', '11', '2', '1', '9']
+# y.sort(key=int)
 # y = sorted(y, key=int)
-print(y)
+# print(y)
 
 # z = ['name', 'my', 'rowince', 'is']
 # z.sort()
