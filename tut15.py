@@ -3,7 +3,58 @@
 # Input : list2 = [20, 10, 20, 4, 100]
 # Output : 100
 
+import sys
 list2 = [20, 10, 20, 4, 100]
+# list2 = [20, 30]
+
+
+def maxl(arr):
+    mx = -sys.maxsize
+    for i in arr:
+        if i > mx:
+            mx = i
+    print(mx)
+
+
+maxl(list2)
+
+
+# class based
+
+
+# class Pair:
+#     def __init__(self):
+#         self.max = 0
+
+
+# def find_max(arr):
+#     size = len(arr)
+#     max_val = Pair()
+#     if size == 1:
+#         max_val.max = arr[0]
+#         return max_val.max
+#     if arr[0] > arr[1]:
+#         max_val.max = arr[0]
+#     else:
+#         max_val.max = arr[1]
+#     for i in range(2, size):
+#         if arr[i] > max_val.max:
+#             max_val.max = arr[i]
+#     return max_val.max
+
+
+# print(find_max(list2))
+
+# function based
+
+# def find_max(arr):
+#     max_value = arr[0]
+#     for i in arr:
+#         if i > max_value:
+#             max_value = i
+#     return max_value
+# print(find_max(list2))
+# time complexity=O(n)
 
 # max function
 

@@ -22,7 +22,7 @@ def productexcept(list):
         # temp == 1 and list[i] != 0
         elif temp == 1 and list[i] != 0:
             arr[i] = 0
-        # temp == 1 and list[i] == 0
+        # temp > 1 and list[i] == 0
         elif temp > 1:
             arr[i] = 0
         # temp == 1 and list[i] == 0
