@@ -5,16 +5,36 @@
 
 
 from collections import Counter
-# list = [10, 20, 30, 20, 20, 30, 40, 50, -20, 60, 60, -20, -20]
+list = [10, 20, 30, 20, 20, 30, 40, 50, -20, 60, 60, -20, -20]
 
-# for loop
-# output_list = []
-# for i in range(len(list)):
-#     k = i+1
-#     for j in range(k, len(list)):
-#         if list[i] == list[j] and list[i] not in output_list:
-#             output_list.append(list[i])
-# print(output_list)
+# time complexity O(n)
+
+
+# def find_duplicates(arr):
+#     temp = []
+#     arr.sort()
+#     for i in range(len(arr)-1):
+#         j = i + 1
+#         if arr[i] == arr[j] and arr[i] not in temp:
+#             temp.append(arr[i])
+#     print(temp)
+
+
+# find_duplicates(list)
+
+# time complexity O(n)
+
+
+def find_duplicates(arr):
+    temp = []
+    for i in range(len(arr)-1):
+        for j in range(i+1, len(arr)):
+            if arr[i] == arr[j] and arr[i] not in temp:
+                temp.append(arr[i])
+    print(temp)
+
+
+find_duplicates(list)
 
 
 # l1 = [1, 2, 1, 2, 3, 4, 5, 1, 1, 2, 5, 6, 7, 8, 9, 9]
@@ -54,10 +74,10 @@ from collections import Counter
 #input = x = {'a':2, 'b':4, 'c':5}
 #output = 'a2b4c5'
 
-x = {'a': 2, 'b': 4, 'c': 5}
-print(x)
-y = ''
-for k, v in x.items():
-    y = y+k
-    y = y+str(v)
-print(y)
+# x = {'a': 2, 'b': 4, 'c': 5}
+# print(x)
+# y = ''
+# for k, v in x.items():
+#     y = y+k
+#     y = y+str(v)
+# print(y)
