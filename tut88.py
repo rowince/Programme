@@ -5,8 +5,7 @@
 # -1
 
 arr = [2, 4, 9, 6, 3, 8, 5, 7]
-target = 110
-
+target = 12
 
 def seq_num(arr, num):
     while arr:

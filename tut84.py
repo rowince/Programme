@@ -14,11 +14,6 @@ def fibonacci(num):
     elif num == 1:
         print(num)
     else:
-        # for i in range(1, num+1):
-        #     print(a)
-        #     c = a + b
-        #     a = b
-        #     b = c
         while count < num:
             print(a, end=' ')
             c = a + b

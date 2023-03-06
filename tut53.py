@@ -1,19 +1,19 @@
 # decorator function
 
-# def greeting_extend(fun):
-#     def inner():
-#         print('Hello,')
-#         fun()
-#         print('Have a nice day')
-#     return inner
+def greeting_extend(fun):
+    def inner():
+        print('Hello,')
+        fun()
+        print('Have a nice day')
+    return inner
 
 
-# @greeting_extend
-# def greeting_morning():
-#     print('Good Morning')
+@greeting_extend
+def greeting_morning():
+    print('Good Morning')
 
 
-# print(greeting_morning())
+print(greeting_morning())
 # greeting_morning()
 # my_fun = greeting_extend(greeting_morning)
 # my_fun()

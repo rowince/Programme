@@ -9,12 +9,12 @@
 # list2 = extendList(123, [])
 # list3 = extendList('a')
 
-# print(list1)
-# print(id(list1))
-# print(list2)
-# print(id(list2))
-# print(list3)
-# print(id(list3))
+# print(list1) # [10]
+# # print(id(list1))
+# print(list2) # [123]
+# # print(id(list2))
+# print(list3) # [10, 'a']
+# # print(id(list3))
 
 ##################################################################
 
@@ -27,18 +27,19 @@
 #     print(i(2))
 # print([m(2) for m in multipliers()])
 
-list = [ [ ] ] * 5
-print(list)  # output? [[], [], [], [], []]
-print(id(list))
-list[0].append(10)
-print(list)  # output? [[10], [], [], [], []]
-print(id(list))
-list[1].append(20)
-print(list)  # output? [[10], [20], [], [], []]
-print(id(list))
-list.append(30)
-print(list)  # output? [[10], [20], [], [], [], 30]
-print(id(list))
+# list = [ [ ] ] * 5
+# print(list)  # output? [[], [], [], [], []]
+# print(id(list))
+# list[0].append(10)
+# print(list)  # output? [[10], [], [], [], []]
+# print(id(list))
+# list[1].append(20)
+# print(list)  # output? [[10], [20], [], [], []]
+# print(id(list))
+# list.append(30)
+# print(list)  # output? [[10], [20], [], [], [], 30]
+# print(id(list))
+
 
 # print(x)
 # print(id(x))

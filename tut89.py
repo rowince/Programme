@@ -10,7 +10,7 @@ list1 = ['abc', 'bca', 'cab', 'def', 'edf', 'fisnius']
 
 def anagram_match(arr):
     new_anagram = {}
-    for i in list1:
+    for i in arr:
         new = str(sorted(i))
         if new in new_anagram:
             new_anagram[new].append(i)

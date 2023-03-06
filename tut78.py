@@ -15,11 +15,11 @@ def sortdict(arr):
     print(arr)
 
 
-sortdict(students)
+# sortdict(students)
 
 
-# new = sorted(students, key=lambda i: i['student_id'])
-# print(new)
+new = sorted(students, key=lambda i: i['student_id'])
+print(new)
 
 # new = sorted(students, key=itemgetter('student_id'))
 # print(new)

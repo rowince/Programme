@@ -20,7 +20,7 @@ x = {'ravi': 10, 'rajnish': 9, 'sanjeev': 15, 'yash': 2, 'suraj': 32}
 
 
 def dict_sort(arr):
-    sort_dict = dict(sorted(arr.items(), key=itemgetter(0)))
+    sort_dict = dict(sorted(arr.items(), key=itemgetter(1)))
     print(sort_dict)
 
 
